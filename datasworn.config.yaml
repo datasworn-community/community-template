@@ -1,0 +1,22 @@
+outDir: datasworn
+packageOutDir: dist/packages
+repository:
+  type: git
+  url: git+https://github.com/datasworn-community/community-template.git
+packages:
+  - id: my_package
+    type: expansion
+    source: source_data/my_package
+    packageName: "@your-npm-scope/my-package"
+    schemaLine: "0.2"
+    version: "0.2.0"
+    description: "A sample Datasworn community content package."
+    license: "CC-BY-4.0"
+    private: true
+    dependencies:
+      - starforged
+    publishDependencies:
+      - id: starforged
+        packageName: "@datasworn-community/starforged"
+        schemaLine: "0.2"
+
