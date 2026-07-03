@@ -7,15 +7,6 @@ builds YAML source data into publishable npm package artifacts with
 This template intentionally starts with one private sample package:
 `source_data/my_package`. Rename it before publishing.
 
-## Raw JSON
-
-Generated raw Datasworn JSON is committed in `generated-datasworn/` for users
-who want to download or browse files directly from GitHub.
-
-Use `generated-datasworn/manifest.json` to see the current generated file,
-package name, schema line, license, and dependency metadata for each content
-package.
-
 ## Quick Start
 
 ```sh
@@ -26,7 +17,6 @@ bun run validate
 
 Generated artifacts are written to:
 
-- `generated-datasworn/my_package.json`
 - `datasworn/my_package/my_package.json`
 - `dist/packages/my_package/`
 
@@ -68,7 +58,6 @@ Project-specific notes in this template:
 ```text
 source_data/           Datasworn source YAML you edit
 datasworn.config.yaml  Build and package metadata
-generated-datasworn/   Generated raw JSON committed for GitHub users
 datasworn/             Generated built JSON, ignored by git
 dist/packages/         Generated npm package artifacts, ignored by git
 .github/workflows/    Build, stable release, and experimental release callers
@@ -85,3 +74,4 @@ to a pull request. Removing the label, closing the PR, or merging the PR cleans
 up the canary dist-tags.
 
 Before publishing, read [Publishing](docs/PUBLISHING.md).
+

@@ -62,10 +62,6 @@ bun run build
 bun run validate
 ```
 
-Commit the regenerated `generated-datasworn/` files with your source changes.
-Those files are the raw JSON surface for users who browse or download content
-directly from GitHub.
-
 The build fails if:
 
 - source YAML is invalid;
@@ -82,3 +78,4 @@ When the package is ready:
 3. Confirm `repository.url` points at this repository.
 4. Confirm your license and provenance docs are accurate.
 5. Read [Publishing](PUBLISHING.md).
+

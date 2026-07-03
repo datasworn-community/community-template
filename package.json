@@ -10,14 +10,15 @@
   },
   "scripts": {
     "build": "datasworn-build --config datasworn.config.yaml",
-    "validate": "test -f dist/packages/my_package/package.json && test -f dist/packages/my_package/json/my_package.json && test -f generated-datasworn/manifest.json && test -f generated-datasworn/my_package.json"
+    "validate": "test -f dist/packages/my_package/package.json && test -f dist/packages/my_package/json/my_package.json"
   },
   "engines": {
     "bun": ">=1.3"
   },
   "devDependencies": {
-    "@datasworn-community/build-tools": "0.2.8",
-    "@datasworn-community/core": "0.2.8",
+    "@datasworn-community/build-tools": "0.2.6",
+    "@datasworn-community/core": "0.2.6",
     "@datasworn-community/starforged": "0.2.1"
   }
 }
+

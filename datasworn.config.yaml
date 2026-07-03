@@ -1,5 +1,4 @@
 outDir: datasworn
-publicJsonOutDir: generated-datasworn
 packageOutDir: dist/packages
 repository:
   type: git
@@ -20,3 +19,4 @@ packages:
       - id: starforged
         packageName: "@datasworn-community/starforged"
         schemaLine: "0.2"
+
