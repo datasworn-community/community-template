@@ -33,8 +33,10 @@ For schema line `0.2`, content packages publish as `0.2.x`.
 
 Apply the `release_experimental` label to a pull request to publish a canary.
 
-Removing the label stops future canary publishes. Closing or merging the pull
-request removes its canary dist-tags.
+Removing the label stops future canary publishes. The per-PR `pr-<number>`
+dist-tags remain after the pull request closes as convenience aliases and can
+move when a new canary is published. Use the exact version from the PR comment
+for reproducible installs.
 
 ## npm Setup
 
@@ -47,8 +49,8 @@ Before the first stable publish:
 
 The Datasworn Community org uses npm trusted publishing with GitHub Actions
 provenance. If you use your own scope, configure npm trusted publishing for this
-repository and workflow. A scoped `NPM_TOKEN` is still required for canary
-dist-tag cleanup, because npm OIDC does not authenticate `npm dist-tag rm`.
+repository and workflow. Stable and canary publishes use trusted publishing; no
+npm access token is required.
 
 For GitHub Actions trusted publishing, register the caller workflow file in npm:
 
