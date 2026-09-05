@@ -7,7 +7,7 @@
       "name": "Your Name"
     }
   ],
-  "datasworn_version": "0.2.0",
+  "datasworn_version": "0.3.0",
   "date": "2026-01-01",
   "delve_sites": {},
   "license": "https://creativecommons.org/licenses/by/4.0",
@@ -100,5 +100,6 @@
   "title": "My Package",
   "truths": {},
   "type": "expansion",
-  "url": "https://example.com/my-package"
+  "url": "https://example.com/my-package",
+  "worlds": {}
 }
