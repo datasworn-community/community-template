@@ -9,8 +9,8 @@ packages:
     type: expansion
     source: source_data/my_package
     packageName: "@your-npm-scope/my-package"
-    schemaLine: "0.2"
-    version: "0.2.0"
+    schemaLine: "0.3"
+    version: "0.3.0"
     description: "A sample Datasworn community content package."
     license: "CC-BY-4.0"
     private: true
@@ -19,4 +19,4 @@ packages:
     publishDependencies:
       - id: starforged
         packageName: "@datasworn-community/starforged"
-        schemaLine: "0.2"
+        schemaLine: "0.3"

@@ -1,10 +1,10 @@
 {
-  "datasworn_version": "0.2.0",
+  "datasworn_version": "0.3.0",
   "packages": {
     "my_package": {
       "id": "my_package",
       "type": "expansion",
-      "schemaLine": "0.2",
+      "schemaLine": "0.3",
       "packageName": "@your-npm-scope/my-package",
       "path": "my_package.json",
       "description": "A sample Datasworn community content package.",
